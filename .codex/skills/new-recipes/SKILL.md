@@ -22,6 +22,8 @@ Read existing guides and applicable repository instructions before adding files.
 
 Save each guide at `week-of-YYYY-MM-DD/README.md`, using the Monday of the intended meal week. Include an explicit date heading and a `week-of-YYYY-MM-DD` frontmatter tag. For a Sunday shopping request planning the coming weekdays, use the following Monday and say so. Preserve existing weeks.
 
+This repository also publishes a static site through GitHub Pages from `main` → `/docs`. After adding or editing recipes, run `python3 site/build.py` and include regenerated `docs/` pages in the same change. Keep recipes in Markdown as the source of truth. Preserve the `## Shopping list` heading and weekday recipe headings such as `## Monday: Recipe name`; each recipe starts with a bold timing line. Preserve `docs/food-photo.jpg`, which is a maintained asset. The builder automatically makes the latest week the home page and retains dated pages for past weeks. Do not add a backend or move hosting away from GitHub Pages without a request.
+
 Include:
 - A compact dinner table with active and elapsed times.
 - A consolidated, checkable shopping list organized by grocery department, with practical package sizes and total quantities.
@@ -35,4 +37,3 @@ Reconcile shopping quantities against all recipes, including lunch portions, sea
 Do not publish personal names or private health history in this public repository; describe the dietary requirement generically.
 
 Use the authorized GitHub connection to save requested changes to `magicmark/recipe_guides`. Preserve unrelated files. If remote writes are blocked, finish the local deliverables and state that they have not been pushed; do not claim a local commit updated GitHub.
-
